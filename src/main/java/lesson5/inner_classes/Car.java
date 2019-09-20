@@ -1,4 +1,4 @@
-package lesson5.classes;
+package lesson5.inner_classes;
 
 public class Car {
     private static final String CODE = "100";

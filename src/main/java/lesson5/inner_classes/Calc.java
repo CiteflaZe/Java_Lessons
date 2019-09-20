@@ -1,4 +1,4 @@
-package lesson5.classes;
+package lesson5.inner_classes;
 
 import java.util.HashMap;
 import java.util.Map;
