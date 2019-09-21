@@ -71,6 +71,20 @@ public class Student {
         return group;
     }
 
+    @Override
+    public String toString() {
+        return ("ID: " + id +
+                ", Name: " + name +
+                ", Surname: " + surname +
+                ", Patronymic: " + patronymic +
+                ", Date of birth: " + dateOfBirth +
+                ", Address: " + address +
+                ", Phone number: " + phoneNumber +
+                ", Faculty: " + faculty +
+                ", Year: " + studyYear +
+                ", Group: " + group);
+    }
+
     public static class Builder{
         private int id;
         private String name;
