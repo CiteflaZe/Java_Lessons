@@ -44,15 +44,11 @@ public class StudentList implements StudentListSearch {
 
     @Override
     public String searchByFacultyAndStudyYear(String faculty, int year) {
-        if (Objects.isNull(faculty)) {
-            throw new NullPointerException("Faculty is null");
-        } else if (faculty.isEmpty()) {
-            throw new RuntimeException("Faculty is empty");
-        } else if (year < 1 || year > 6) {
+        String res = "Faculty " + faculty + ":\n";
+        res += searchByFaculty(faculty);
+        if (year < 1 || year > 6) {
             throw new RuntimeException("Study year can't be less than 1 or greater than 6");
         } else {
-            String res = "Faculty " + faculty + ":\n";
-            res += searchByFaculty(faculty);
             res += "\nStudy year " + year + ":\n[";
             for (Student student :
                     this.students) {
