@@ -4,14 +4,14 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class StudentList implements StudentListSearch {
+public class StudentRoster implements StudentRosterSearch {
     public ArrayList<Student> students;
 
-    public StudentList() {
+    public StudentRoster() {
         this.students = new ArrayList<>();
     }
 
-    public StudentList(ArrayList<Student> list) {
+    public StudentRoster(ArrayList<Student> list) {
         if (Objects.isNull(list)) {
             throw new NullPointerException("List can't be null");
         } else if (list.isEmpty()) {

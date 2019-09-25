@@ -1,13 +1,12 @@
 package hometask4;
 
 import java.time.LocalDate;
-import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        StudentList sl = new StudentList();
+        StudentRoster sl = new StudentRoster();
 
         sl.students.add(Student.builder()
                 .withId(1)

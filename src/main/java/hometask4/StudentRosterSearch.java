@@ -2,7 +2,7 @@ package hometask4;
 
 import java.time.LocalDate;
 
-public interface StudentListSearch {
+public interface StudentRosterSearch {
 
     String searchByFaculty(String faculty);
 
