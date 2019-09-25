@@ -45,4 +45,7 @@ public class StudentRepositoryImpl implements StudentRepository {
         }
         return idToStudent.remove(id);
     }
+
+    public void method(){}
+
 }
