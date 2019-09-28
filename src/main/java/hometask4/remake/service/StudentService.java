@@ -9,11 +9,11 @@ public interface StudentService {
 
     Student register(Student student);
 
-    Student findById();
+    String showAll();
 
-    String findByDepartment(Department department);
+    String findByDepartment(String departmentName);
 
-    String findByDepartmentAndStudyYear(Department department, int year);
+    String findByDepartmentAndStudyYear(String departmentName, int year);
 
     String findByBornAfterDate(LocalDate date);
 

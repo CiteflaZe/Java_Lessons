@@ -10,6 +10,10 @@ public class StudentRepositoryImpl implements StudentRepository {
     private Map<Long, Student> idToStudent = new HashMap<>();
     private static Long counter = 0L;
 
+    public StudentRepositoryImpl(){
+
+    }
+
     @Override
     public Student save(Student student) {
         if (Objects.isNull(student)) {
@@ -46,6 +50,7 @@ public class StudentRepositoryImpl implements StudentRepository {
         return idToStudent.remove(id);
     }
 
-    public void method(){}
-
+    public Map<Long, Student> getIdToStudent() {
+        return idToStudent;
+    }
 }

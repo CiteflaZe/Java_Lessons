@@ -1,5 +1,6 @@
 package hometask5.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Word {
@@ -10,6 +11,20 @@ public class Word {
     }
 
     public List<Symbol> getSymbols() {
-        return symbols;
+        return symbols == null ? null : new ArrayList<>(symbols);
+    }
+
+    @Override
+    public String toString() {
+        if (symbols == null || symbols.size() == 0){
+            return "";
+        }else {
+            StringBuilder stringBuilder = new StringBuilder();
+
+            for (Symbol i : symbols){
+                stringBuilder.append(i.getSymbol());
+            }
+            return stringBuilder.toString();
+        }
     }
 }

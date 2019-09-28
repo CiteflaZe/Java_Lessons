@@ -72,7 +72,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return ("ID: " + id +
+        return ("Student ID: " + id +
                 ", Name: " + name +
                 ", Surname: " + surname +
                 ", Date of birth: " + dateOfBirth +

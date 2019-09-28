@@ -10,4 +10,9 @@ public abstract class Symbol {
     public char getSymbol() {
         return symbol;
     }
+
+    @Override
+    public String toString() {
+        return symbol + "";
+    }
 }
