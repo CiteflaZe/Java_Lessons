@@ -18,7 +18,7 @@ public class User implements Comparable<User> {
                 }
             }
         }
-        return 0;
+        return user1.getName().length() - user2.getName().length();
 //        return user1.getName().compareTo(user2.getName());
     };
     public static final Comparator<User> USER_COMPARATOR_BY_SURNAME = (user1, user2) -> {
@@ -29,7 +29,7 @@ public class User implements Comparable<User> {
                 }
             }
         }
-        return 0;
+        return user1.getSurname().length() - user2.getSurname().length();
 //        return user1.getSurname().compareTo(user2.getSurname());
     };
 

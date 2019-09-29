@@ -7,10 +7,10 @@ import hometask4.remake.repository.StudentRepositoryImpl;
 
 import java.time.LocalDate;
 import java.util.Objects;
-
+//@Component
 public class StudentServiceImpl implements StudentService {
     private final StudentRepositoryImpl studentRepositoryImpl;
-
+    //@Inject
     public StudentServiceImpl(StudentRepositoryImpl studentRepository) {
         this.studentRepositoryImpl = studentRepository;
     }

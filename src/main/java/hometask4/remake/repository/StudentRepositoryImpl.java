@@ -5,7 +5,7 @@ import hometask4.remake.domain.Student;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
-
+//@Component
 public class StudentRepositoryImpl implements StudentRepository {
     private Map<Long, Student> idToStudent = new HashMap<>();
     private static Long counter = 0L;
