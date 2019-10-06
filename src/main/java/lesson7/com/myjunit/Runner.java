@@ -47,11 +47,11 @@ public final class Runner {
         }
     }
 
-    private static void invokeTestMethods(List<Method> testClassMethods, List<Method> afterClassMethods, List<Method> beforeClassMethods, Object object) throws InvocationTargetException, IllegalAccessException {
+    private static void invokeTestMethods(List<Method> testClassMethods, List<Method> beforeClassMethods, List<Method> afterClassMethods, Object object) throws InvocationTargetException, IllegalAccessException {
         for (Method method :
                 testClassMethods) {
             invokeMethods(beforeClassMethods, object);
-            method.invoke(method);
+            method.invoke(object);
             invokeMethods(afterClassMethods, object);
         }
     }

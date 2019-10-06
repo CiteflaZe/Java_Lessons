@@ -9,6 +9,19 @@ public class FieldsTest {
     public static int arg6 = 15;
     public static final int[] arr1 = {4, 3, 5, 2};
 
+
+    enum Type{
+        ONE("name1"), TWO("name2"), THREE("name3");
+        private String name;
+        Type(String name){
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
+    }
+
     public FieldsTest(int arg1, int arg2, int ARG3) {
         this.arg1 = arg1;
         this.arg2 = arg2;
